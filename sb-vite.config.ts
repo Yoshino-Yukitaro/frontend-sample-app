@@ -7,5 +7,12 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [tsconfigPaths()],
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "./app/variables.scss";'
+        }
+      }
+    }
   }
 })
