@@ -1,0 +1,44 @@
+// こんな感じでクラスごとにcssを書いてください
+// presenter側でクラスごとに参照できます
+.header_container {
+  background-color: #1e90ff;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1.6rem;
+  height: 6rem;
+  justify-content: space-between;
+}
+
+.header_logo-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header_nav {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.header_nav-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.header_nav-content_list-item {
+  margin: 0 1rem;
+}
+
+.header_nav-content_list-item-link {
+  color: #fff;
+  text-decoration: none;
+}
