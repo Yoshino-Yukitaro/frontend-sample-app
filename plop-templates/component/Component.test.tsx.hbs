@@ -1,0 +1,12 @@
+import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
+
+import { {{pascalCase name}} } from ".";
+
+test('renders {{pascalCase name}} component', () => {
+  render(<{{pascalCase name}} />);
+
+  const titleElement = screen.getByRole( "heading", { level: 2, name: /{{pascalCase name}}コンポーネントです/i });
+
+  expect(titleElement).toBeInTheDocument();
+});

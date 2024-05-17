@@ -1,0 +1,15 @@
+import { FC } from 'react';
+
+import styles from './{{camelCase name}}.module.scss';
+
+interface {{pascalCase name}}PresenterProps {
+};
+
+export const {{pascalCase name}}Presenter: FC<{{pascalCase name}}PresenterProps> = ({  }) => {
+  // コンポーネントの見た目だけを実装してください。状態管理やロジックが必要な場合はindexの方で実装してください。
+  return (
+    <div className={styles.huga}>
+      <h2 className={styles.hoge}>{{pascalCase name}}コンポーネントです</h2>
+    </div>
+  );
+};
