@@ -7,6 +7,7 @@ import {
 } from "@remix-run/react";
 
 import styles from "./global.module.scss";
+import './variables.scss';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

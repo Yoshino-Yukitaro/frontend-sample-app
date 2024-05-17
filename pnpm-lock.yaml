@@ -26,6 +26,9 @@ dependencies:
   sass:
     specifier: ^1.77.2
     version: 1.77.2
+  sass-loader:
+    specifier: ^14.2.1
+    version: 14.2.1(sass@1.77.2)
 
 devDependencies:
   '@chromatic-com/storybook':
@@ -109,9 +112,6 @@ devDependencies:
   plop:
     specifier: ^4.0.1
     version: 4.0.1
-  sass-loader:
-    specifier: ^14.2.1
-    version: 14.2.1(sass@1.77.2)
   storybook:
     specifier: ^8.0.9
     version: 8.0.9(react-dom@18.3.1)(react@18.3.1)
@@ -8259,7 +8259,6 @@ packages:
 
   /neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
-    dev: true
 
   /no-case@3.0.4:
     resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
@@ -9666,7 +9665,7 @@ packages:
     dependencies:
       neo-async: 2.6.2
       sass: 1.77.2
-    dev: true
+    dev: false
 
   /sass@1.77.2:
     resolution: {integrity: sha512-eb4GZt1C3avsX3heBNlrc7I09nyT00IUuo4eFhAbeXWU2fvA7oXI53SxODVAA+zgZCk9aunAZgO+losjR3fAwA==}
