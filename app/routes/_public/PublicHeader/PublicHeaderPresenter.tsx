@@ -5,10 +5,11 @@ import { Link } from '@remix-run/react';
 import { SimpleButton } from '../../../ui';
 
 interface PublicHeaderPresenterProps {
-  hoge?: string
+  hoge?: string,
+  loginAction(): void
 }
 
-export const PublicHeaderPresenter: FC<PublicHeaderPresenterProps> = () => {
+export const PublicHeaderPresenter: FC<PublicHeaderPresenterProps> = ({ loginAction }) => {
   // コンポーネントの見た目だけを実装してください。状態管理やロジックが必要な場合はindexの方で実装してください。
   const navLinks = [
     { text: '他ページ1', url: '/page1' },
@@ -28,7 +29,7 @@ export const PublicHeaderPresenter: FC<PublicHeaderPresenterProps> = () => {
             </li> 
           ))}   
         </ul>
-        <SimpleButton>ログイン</SimpleButton>
+        <SimpleButton onClick={loginAction}>ログイン</SimpleButton>
       </nav>
     </div>
   );
