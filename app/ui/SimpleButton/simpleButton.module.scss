@@ -1,0 +1,11 @@
+// こんな感じでクラスごとにcssを書いてください
+// presenter側でクラスごとに参照できます
+.simple-button {
+  background-color: $sub-color;
+  color: $main-color;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
