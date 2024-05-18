@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import styles from './publicHeader.module.scss';
 import { Link } from '@remix-run/react';
+import { SimpleButton } from '../../../ui';
 
 interface PublicHeaderPresenterProps {
   hoge?: string
@@ -27,6 +28,7 @@ export const PublicHeaderPresenter: FC<PublicHeaderPresenterProps> = () => {
             </li> 
           ))}   
         </ul>
+        <SimpleButton>ログイン</SimpleButton>
       </nav>
     </div>
   );
