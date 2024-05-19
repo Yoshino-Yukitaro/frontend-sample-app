@@ -7,8 +7,9 @@
 
 .private-nav {
   position: sticky;
-  top: 100vh;
+  bottom: 0;
   background-color: $main-color;
+  display: inline-block;
 }
 
 .private_todo-plus-button {

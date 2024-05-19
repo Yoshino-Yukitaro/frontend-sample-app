@@ -3,7 +3,7 @@
 
 // 上記以外の場合は下記のコメントアウトを外してロジックや状態管理を実装してください
 
-import { ChangeEvent, useState } from 'react';
+import { useState } from 'react';
 import { TodoCardPresenter } from './TodoCardPresenter';
 
 interface TodoCardProps {
@@ -14,8 +14,7 @@ interface TodoCardProps {
 
 export const TodoCard = ({ title, completed, testId }: TodoCardProps) => {
   const [isCompleted, setIsCompleted] = useState(completed)
-  const onChange = (event: ChangeEvent<HTMLInputElement>) => {
-    event.preventDefault()
+  const onChange = () => {
     setIsCompleted(!isCompleted)
   }
   return (
