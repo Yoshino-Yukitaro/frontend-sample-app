@@ -1,5 +1,3 @@
-import { FC } from 'react';
-
 import styles from './publicHeader.module.scss';
 import { Link } from '@remix-run/react';
 import { SimpleButton } from '../../../ui';
@@ -9,7 +7,7 @@ interface PublicHeaderPresenterProps {
   loginAction(): void
 }
 
-export const PublicHeaderPresenter: FC<PublicHeaderPresenterProps> = ({ loginAction }) => {
+export const PublicHeaderPresenter = ({ loginAction }: PublicHeaderPresenterProps) => {
   // コンポーネントの見た目だけを実装してください。状態管理やロジックが必要な場合はindexの方で実装してください。
   const navLinks = [
     { text: '他ページ1', url: '/page1' },

@@ -3,17 +3,13 @@
 
 // 上記以外の場合は下記のコメントアウトを外してロジックや状態管理を実装してください
 
-import { FC } from 'react'; 
 import { PublicHeaderPresenter } from './PublicHeaderPresenter';
-
-interface PublicHeaderProps {
-}
 
 const loginAction = () => {
   console.log('login');
 }
 
-export const PublicHeader: FC<PublicHeaderProps> = () => {
+export const PublicHeader= () => {
   return (
     <PublicHeaderPresenter loginAction={loginAction} />
   );
