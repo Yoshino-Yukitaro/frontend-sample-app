@@ -3,6 +3,12 @@ import { Link, Outlet } from "@remix-run/react"
 import styles from "./private.module.scss"
 import { PlusIconButton } from "~/ui/PlusIconButton"
 
+export const meta = () => {
+  return [{
+    title: 'ログイン後のページ'
+  }]
+}
+
 const PrivateRoute = () => {
   const plusButtonHandler = () => {
     alert('plus button clicked')
