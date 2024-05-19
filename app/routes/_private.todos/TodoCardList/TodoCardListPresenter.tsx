@@ -1,5 +1,4 @@
 import { Todo } from '~/models/todo';
-import styles from './todoCardList.module.scss';
 import { TodoCard } from '../TodoCard';
 
 interface TodoCardListPresenterProps {
