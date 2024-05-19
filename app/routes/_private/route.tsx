@@ -1,12 +1,20 @@
 import { Link, Outlet } from "@remix-run/react"
+import { LoaderFunctionArgs } from "@remix-run/node"
 
 import styles from "./private.module.scss"
 import { PlusIconButton } from "~/ui/PlusIconButton"
+import { authenticator } from "~/server/auth"
 
 export const meta = () => {
   return [{
     title: 'ログイン後のページ'
   }]
+}
+
+export const loader = async({ request }: LoaderFunctionArgs) => {
+  return await authenticator.isAuthenticated(request, {
+    failureRedirect: "/"
+  })
 }
 
 const PrivateRoute = () => {
